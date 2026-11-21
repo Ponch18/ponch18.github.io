@@ -1,0 +1,12 @@
+# Doriano Ponzo
+
+> Senior Software Developer at EOS Online (So Smart), specialized in Microsoft Dynamics 365 Business Central, AL and AI agents built with Copilot Studio, Azure AI Foundry and the Model Context Protocol (MCP). Based in Cuneo, Piedmont, Italy.
+
+## Site
+
+- [Home](https://ponch18.github.io/): one page with About, What I work on, Experience, Skills and Contact
+
+## Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/dorianoponzo): professional profile and the way to get in touch
+- [GitHub](https://github.com/Ponch18): public repositories

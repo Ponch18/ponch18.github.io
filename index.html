@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Doriano Ponzo | Business Central and AI agents</title>
+  <meta name="description" content="Doriano Ponzo, Senior Software Developer specialized in Microsoft Dynamics 365 Business Central, AL and AI agents with Copilot Studio, Azure AI Foundry and MCP.">
+  <meta name="author" content="Doriano Ponzo">
+  <link rel="canonical" href="https://ponch18.github.io/">
+
+  <meta name="theme-color" content="#f7f4ed" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#071122" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Doriano Ponzo">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://ponch18.github.io/">
+  <meta property="og:title" content="Doriano Ponzo | Business Central and AI agents">
+  <meta property="og:description" content="Senior Software Developer at EOS Online (So Smart). Dynamics 365 Business Central, AL, C#/.NET and AI agents with Copilot Studio, Azure AI Foundry and MCP.">
+  <!-- Share card: assets/og-card.jpg (1200 x 630). -->
+  <meta property="og:image" content="https://ponch18.github.io/assets/og-card.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Doriano Ponzo, Senior Software Developer. Dynamics 365 Business Central and AI agents.">
+  <meta property="profile:first_name" content="Doriano">
+  <meta property="profile:last_name" content="Ponzo">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Doriano Ponzo | Business Central and AI agents">
+  <meta name="twitter:description" content="Senior Software Developer at EOS Online (So Smart). Dynamics 365 Business Central, AL, C#/.NET and AI agents with Copilot Studio, Azure AI Foundry and MCP.">
+  <meta name="twitter:image" content="https://ponch18.github.io/assets/og-card.jpg">
+  <meta name="twitter:image:alt" content="Doriano Ponzo, Senior Software Developer. Dynamics 365 Business Central and AI agents.">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/jetbrains-mono-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    /* Runs before first paint: applies a saved theme choice so the page never flashes the wrong theme. */
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      /* fx: effects are allowed. They are off for people who ask for reduced motion. */
+      if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) root.classList.add('fx');
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+      } catch (e) { /* storage unavailable: follow the system theme */ }
+    })();
+  </script>
+  <script src="script.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Doriano Ponzo",
+    "jobTitle": "Senior Software Developer",
+    "worksFor": { "@type": "Organization", "name": "EOS Online" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Cuneo",
+      "addressRegion": "Piedmont",
+      "addressCountry": "IT"
+    },
+    "url": "https://ponch18.github.io/",
+    "image": "https://ponch18.github.io/assets/profile.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/dorianoponzo",
+      "https://github.com/Ponch18"
+    ],
+    "knowsAbout": [
+      "Microsoft Dynamics 365 Business Central",
+      "AL",
+      "AI agents",
+      "Microsoft Copilot Studio",
+      "Azure AI Foundry",
+      "Model Context Protocol"
+    ],
+    "knowsLanguage": ["it", "en"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-bar">
+      <a class="brand" href="#top">
+        <!-- DP monogram: ink letters on paper, paper letters on navy. Only one is shown per theme. -->
+        <img class="brand-mark mark-on-light" src="assets/brand/dp-mark.svg" alt="" width="44" height="24">
+        <img class="brand-mark mark-on-dark" src="assets/brand/dp-mark-reversed.svg" alt="" width="44" height="24">
+        <span class="brand-name">Doriano Ponzo</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="icon-btn theme-toggle" data-theme-toggle aria-label="Switch theme">
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M4.6 4.6l1.4 1.4M18 18l1.4 1.4M2.5 12h2M19.5 12h2M4.6 19.4L6 18M18 6l1.4-1.4"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-btn" data-menu-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Menu">
+          <svg class="icon-menu" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <svg class="icon-close" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!--
+    The page is one terminal session. Each section starts with a prompt line (decorative, hidden from
+    screen readers) and its output (the real content, with normal headings, lists and links).
+  -->
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="block hero" id="top" aria-labelledby="hero-name">
+      <div class="container">
+        <p class="prompt" aria-hidden="true"><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="prompt-cmd">whoami</span></p>
+        <div class="out hero-out">
+          <div class="hero-copy">
+            <h1 id="hero-name">Doriano Ponzo</h1>
+            <p class="hero-role">Senior Software Developer at <strong>EOS Online</strong> (So Smart)</p>
+            <p class="hero-tagline">
+              <span class="tagline-line">Dynamics 365 Business Central, AL, C#/.NET</span>
+              <span class="tagline-line">Building AI agents with Copilot Studio, Azure AI Foundry and MCP</span>
+            </p>
+            <p class="hero-location">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              <span><span class="visually-hidden">Location: </span>Cuneo, Piedmont, Italy</span>
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/dorianoponzo" target="_blank" rel="noopener">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+              <a class="btn btn-secondary" href="https://github.com/Ponch18" target="_blank" rel="noopener">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <div class="avatar">
+              <span class="avatar-initials" aria-hidden="true">DP</span>
+              <!-- Photo: assets/profile.jpg. If the file is missing, the image removes itself and the initials stay visible. -->
+              <img src="assets/profile.jpg" alt="Portrait of Doriano Ponzo" width="216" height="216" decoding="async" fetchpriority="high" onerror="this.remove()">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About -->
+    <section class="block" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <p class="prompt" aria-hidden="true"><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="prompt-cmd" data-type>cat about.md</span></p>
+        <div class="out prose">
+          <h2 id="about-title">About</h2>
+          <p class="lead" data-stream>I build business software on Microsoft Dynamics 365 Business Central, and today most of my work answers one question: <span class="highlight">how can AI agents make an ERP truly easier to use?</span></p>
+          <p>I am a Senior Software Developer at EOS Online, where I work on So Smart: a ready-to-use Business Central solution for small businesses that goes live in about 10 days, with no implementation project. It is available on Microsoft AppSource in Italy and the United States.</p>
+          <p>I work AI first. Coding agents are part of my daily workflow, and I turn our team's conventions into reusable skills and plugins, so everyone ships faster with consistent quality.</p>
+          <p>Before EOS Online I spent more than six years at EOS Solutions, a Microsoft Dynamics partner with over 100 Business Central apps on AppSource, where I grew from Software Developer to Team Leader. I started my career in 2013 at Merlo Group. Today I also mentor new developers on AL and Business Central.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. What I work on -->
+    <section class="block" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <p class="prompt" aria-hidden="true"><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="prompt-cmd" data-type>ls work/</span></p>
+        <div class="out">
+          <h2 id="work-title">What I work on</h2>
+          <ul class="tools">
+            <li class="tool">
+              <h3>Business Central and AL</h3>
+              <p>Extensions in AL, from development to Microsoft AppSource publishing.</p>
+            </li>
+            <li class="tool">
+              <h3>AI agents</h3>
+              <p>Copilot Studio agents, agents hosted on Azure AI Foundry with streaming responses, Microsoft Agent Framework, Business Central integration through the Model Context Protocol (MCP).</p>
+            </li>
+            <li class="tool">
+              <h3>Full stack</h3>
+              <p>The So Smart portal, with a C#/.NET REST API and a Next.js, TypeScript and React frontend.</p>
+            </li>
+            <li class="tool">
+              <h3>AI first development</h3>
+              <p>Coding agents in my daily workflow, team conventions packaged as reusable skills and plugins.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Experience: a git log, newest entry first. The current role is HEAD. -->
+    <section class="block" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <p class="prompt" aria-hidden="true"><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="prompt-cmd" data-type>git log</span></p>
+        <div class="out">
+          <h2 id="experience-title">Experience</h2>
+          <ol class="log">
+
+            <li class="commit is-current">
+              <span class="commit-node" aria-hidden="true">*</span>
+              <p class="commit-date"><time datetime="2024-06">Jun 2024</time> to present<span class="head" aria-hidden="true">HEAD</span></p>
+              <div class="commit-title">
+                <h3 class="commit-role">Senior Software Developer</h3>
+                <!-- TODO: location for EOS Online (not provided) -->
+                <p class="commit-org">EOS Online</p>
+              </div>
+              <p class="commit-desc">Develops So Smart, a ready-to-use ERP for small businesses built on Microsoft Dynamics 365 Business Central, Microsoft 365 and Power Platform.</p>
+              <ul class="commit-list">
+                <li>So Smart Business Central extensions in AL, including country-specific versions, published on Microsoft AppSource</li>
+                <li>So Smart portal: C#/.NET REST API and Next.js, TypeScript and React frontend, including self-service trial activation for US customers on the Microsoft CSP channel</li>
+                <li>AI agents: Copilot Studio, Azure AI Foundry with streaming chat, Microsoft Agent Framework, MCP integration with Business Central</li>
+                <li>Multi-agent chat platform with an ASP.NET Core API and an embeddable React chat widget</li>
+                <li>Testing, documentation and demo videos for the Business Central AI agents, in Italian and English</li>
+                <li>Mentoring junior AL developers with structured onboarding plans</li>
+              </ul>
+            </li>
+
+            <li class="commit">
+              <span class="commit-node" aria-hidden="true">*</span>
+              <p class="commit-date"><time datetime="2021-06">Jun 2021</time> to <time datetime="2024-06">Jun 2024</time></p>
+              <div class="commit-title">
+                <h3 class="commit-role">Team Leader &amp; Software Developer</h3>
+                <p class="commit-org">EOS Solutions Group, Cuneo</p>
+              </div>
+              <p class="commit-desc">Led a team of 7 to 10 people working on Microsoft Dynamics 365 Business Central.</p>
+              <ul class="commit-list">
+                <li>Coordinated the team's work and priorities</li>
+                <li>Kept developing Business Central extensions alongside team leadership</li>
+              </ul>
+            </li>
+
+            <li class="commit">
+              <span class="commit-node" aria-hidden="true">*</span>
+              <p class="commit-date"><time datetime="2018-02">Feb 2018</time> to <time datetime="2021-06">Jun 2021</time></p>
+              <div class="commit-title">
+                <h3 class="commit-role">Software Developer</h3>
+                <p class="commit-org">EOS Solutions Group, Cuneo</p>
+              </div>
+              <ul class="commit-list">
+                <li>Transition from C/AL on Dynamics NAV to AL extensions on Business Central</li>
+                <li>Reports with Reporting Services, RDLC and Word layouts</li>
+                <li>Integrations between Business Central and external systems through APIs and connectors</li>
+              </ul>
+            </li>
+
+            <li class="commit">
+              <span class="commit-node" aria-hidden="true">*</span>
+              <p class="commit-date"><time datetime="2013-07">Jul 2013</time> to <time datetime="2018-01">Jan 2018</time></p>
+              <div class="commit-title">
+                <h3 class="commit-role">Software Developer</h3>
+                <p class="commit-org">Merlo Group, San Defendente, Piedmont</p>
+              </div>
+              <p class="commit-desc">Merlo Group is an Italian manufacturer of telehandlers and agricultural machinery.</p>
+              <ul class="commit-list">
+                <li>ERP development on Microsoft Dynamics AX in X++</li>
+                <li>Internal web applications in ASP.NET, SharePoint, PHP and MySQL</li>
+                <li>Mobile apps for Android and Windows Phone</li>
+              </ul>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Skills: written as a YAML file -->
+    <section class="block" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="prompt" aria-hidden="true"><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="prompt-cmd" data-type>cat skills.yml</span></p>
+        <div class="out">
+          <h2 id="skills-title">Skills</h2>
+          <div class="yml">
+            <div class="yml-row">
+              <h3 id="skills-erp" class="yml-key">Business Central and ERP</h3>
+              <ul class="yml-list" role="list" aria-labelledby="skills-erp">
+                <li>Dynamics 365 Business Central</li>
+                <li>AL</li>
+                <li>Dynamics NAV</li>
+                <li>C/AL</li>
+                <li>Dynamics AX</li>
+                <li>X++</li>
+                <li>Microsoft AppSource</li>
+                <li>Reporting Services</li>
+              </ul>
+            </div>
+            <div class="yml-row">
+              <h3 id="skills-ai" class="yml-key">AI</h3>
+              <ul class="yml-list" role="list" aria-labelledby="skills-ai">
+                <li>AI agents</li>
+                <li>Generative AI</li>
+                <li>Microsoft Copilot Studio</li>
+                <li>Azure AI Foundry</li>
+                <li>Microsoft Agent Framework</li>
+                <li>Model Context Protocol (MCP)</li>
+                <li>Prompt engineering</li>
+              </ul>
+            </div>
+            <div class="yml-row">
+              <h3 id="skills-dev" class="yml-key">Development</h3>
+              <ul class="yml-list" role="list" aria-labelledby="skills-dev">
+                <li>C#</li>
+                <li>.NET</li>
+                <li>ASP.NET Core</li>
+                <li>REST APIs</li>
+                <li>Next.js</li>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div class="yml-row">
+              <h3 id="skills-tools" class="yml-key">Tools and ways of working</h3>
+              <ul class="yml-list" role="list" aria-labelledby="skills-tools">
+                <li>Azure DevOps</li>
+                <li>Git</li>
+                <li>Claude Code</li>
+                <li>Team leadership</li>
+                <li>Mentoring</li>
+              </ul>
+            </div>
+            <div class="yml-row">
+              <h3 id="skills-lang" class="yml-key">Languages</h3>
+              <ul class="yml-list" role="list" aria-labelledby="skills-lang">
+                <li>Italian <span class="yml-note">(native)</span></li>
+                <li>English <span class="yml-note">(professional working proficiency)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact -->
+    <section class="block" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="prompt" aria-hidden="true"><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="prompt-cmd" data-type>open linkedin</span></p>
+        <div class="out">
+          <h2 id="contact-title">Let's connect</h2>
+          <p class="contact-text">Working on Business Central, AI agents for ERP or in the Microsoft partner ecosystem? I would be glad to connect.</p>
+          <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/dorianoponzo" target="_blank" rel="noopener">Connect on LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- The session is still open: the teal block is the cursor of the agent. With JavaScript this line becomes a real command line (see script.js). -->
+      <p class="prompt prompt-end" aria-hidden="true" data-shell><span class="prompt-id">doriano@ponzo</span><span class="prompt-sep">:~$</span> <span class="cursor"></span></p>
+      <p class="copyright"><span class="comment-mark" aria-hidden="true"># </span>&copy; <span data-year>2026</span> Doriano Ponzo</p>
+    </div>
+  </footer>
+</body>
+</html>

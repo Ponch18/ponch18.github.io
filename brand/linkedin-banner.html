@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LinkedIn banner</title>
+  <meta name="robots" content="noindex">
+  <!--
+    Source of assets/linkedin-banner.jpg (the banner of the LinkedIn profile), exactly 1584 x 396 px.
+    Regenerate: open this file in a browser at exactly 1584 x 396 and export a JPEG.
+    With Playwright: page.setViewportSize({ width: 1584, height: 396 }), then page.screenshot({ type: 'jpeg', quality: 92 }).
+
+    Safe zones: the profile photo covers the bottom left of the banner, so the left 30% (475 px) stays empty.
+    Everything is on the right, and nothing is closer than about 56 px to an edge.
+  -->
+  <style>
+    @font-face {
+      font-family: "JetBrains Mono";
+      src: url("../assets/fonts/jetbrains-mono-latin-wght.woff2") format("woff2");
+      font-weight: 100 800;
+      font-display: block;
+    }
+
+    * { box-sizing: border-box; margin: 0; }
+
+    html, body { width: 1584px; height: 396px; }
+
+    body {
+      position: relative;
+      overflow: hidden;
+      background: #071122;
+      color: #cfdcef;
+      font-family: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+      font-variant-ligatures: none;
+    }
+
+    /* The prompt line. The name of the host is teal: the agent is in this session. */
+    .prompt {
+      position: absolute;
+      left: 520px;
+      top: 62px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.2;
+      white-space: nowrap;
+    }
+
+    .prompt .id { color: #2dd4bf; }
+    .prompt .sep { color: #8ea3c1; }
+
+    /* The output of the command: indented, with a rule on the left, like on the site */
+    .out {
+      position: absolute;
+      left: 520px;
+      top: 134px;
+      padding-left: 36px;
+      border-left: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    .line {
+      display: block;
+      color: #fff;
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 1.4;
+      white-space: pre;
+    }
+
+    .pipe { color: #8ea3c1; }
+
+    /* The cursor of the agent: the one teal block of the banner */
+    .cursor {
+      display: inline-block;
+      width: 0.6em;
+      height: 1.05em;
+      margin-left: 6px;
+      background: #2dd4bf;
+      vertical-align: text-bottom;
+    }
+
+    .url {
+      position: absolute;
+      right: 56px;
+      bottom: 38px;
+      color: #8ea3c1;
+      font-size: 24px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <p class="prompt"><span class="id">doriano@ponzo</span><span class="sep">:~$</span> whoami</p>
+
+  <div class="out">
+    <span class="line">Dynamics 365 Business Central</span>
+    <span class="line"><span class="pipe">|</span> AI agents with Copilot Studio,</span>
+    <span class="line">  Azure AI Foundry and MCP<span class="cursor"></span></span>
+  </div>
+
+  <p class="url">ponch18.github.io</p>
+</body>
+</html>
